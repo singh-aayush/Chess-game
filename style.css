@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --popin: "Poppins", cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--popin);
+}
+
+body{
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2c2c;
+    text-align: center;
+}
+
+.container{
+    margin: 3rem  0;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px #000;
+}
+
+.board{
+    width: 500px;
+    margin: 20px auto;
+}
+
+.button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button{
+    color: #fff;
+    background-color: #000;
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: #434343;
+}
+
+.move-history{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 100px;
+    width: 500px;
+    overflow-y: scroll;
+    background-color: #f2f2f2;
+}
